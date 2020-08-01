@@ -1,0 +1,41 @@
+
+    .table1 {
+        visibility: visible;
+        border-width: 3px;
+        border-color: fuchsia;
+        
+    }
+    .tr1 {
+        visibility: visible;
+        border-width: 2px; 
+        border-color: chartreuse;   
+    }
+    .td2 {
+        visibility: visible;
+        border-width: 2px;
+        border-color: coral;
+        background-color: bisque;
+    }
+    .navTD {
+        border-style: double;
+        visibility:visible;
+        width: 10%;
+        height: 18px;
+        padding: 2px 0 3px 0;
+        border-color: maroon;
+        border-width: 4px 2px 4px 2px;
+        /*border-bottom: solid 8px #ee3114; */
+        box-shadow: 10px 10px 10px #ccc;
+        /* position: absolute; */
+        top: 0;
+      }
+
+/*        #nav {
+        width: 10%;
+        height: 110px;
+        padding: 20px 0 5px 0;
+        border-bottom: solid 8px #ee3114;
+        box-shadow: 10px 10px 10px #ccc;
+        position: absolute;
+        top: 0;
+      } */

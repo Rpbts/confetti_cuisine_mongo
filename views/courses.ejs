@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<Html>
+
+<head>
+    <title>
+        COURSES
+    </title>
+<!-- /* nk rel="stylesheet" href="/css/myStyles.css" /> -->
+
+<!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+
+    <!-- <style>
+        .table1 {
+            visibility: visible;
+            border-width: 3px;
+            border-color: fuchsia;
+
+        }
+
+        .tr1 {
+            visibility: visible;
+            border-width: 2px;
+            border-color: chartreuse;
+        }
+
+        .td2 {
+            visibility: visible;
+            border-width: 2px;
+            border-color: coral;
+            background-color: cornflowerblue;
+        }
+    </style> -->
+
+</head>
+
+<body>
+<h1>Our Courses</h1>
+<% offeredCourses.forEach(course => { %>
+    <h5><%= course.title %></h5>
+    <span><%= course.cost %> </span>
+ <% }); %>
+ 
+</body>
+
+</Html>

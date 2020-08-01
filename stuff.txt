@@ -1,0 +1,15 @@
+C:\Program Files\MongoDB\Server\4.2\bin\mongod.exe
+
+
+https://docs.mongodb.com/manual/reference/mongo-shell/
+npm init
+
+When you use npm install <package>, appending --save to your command installs the package as
+ a dependency for your application. Appending --global installs the package globally on your computer, 
+ to be used anywhere within terminal. These command extensions, called flags, 
+ have the shorthand forms -S and -g, respectively. npm uninstall <package> reverses the install action. 
+ In unit 2, you’ll use npm install express -S to install the Express.js framework for your project 
+ and npm install express-generator -g to install the Express.js generator for use as a command-line tool.
+
+
+even more yep
