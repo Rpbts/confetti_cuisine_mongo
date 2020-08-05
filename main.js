@@ -1,11 +1,14 @@
 "use strict";
 
-const { urlencoded } = require("express");
-const homeController = require("./controllers/homeController");
-
-const port = 3000,
+const { urlencoded } = require("express"),
+    homeController = require("./controllers/homeController"),
+    port = 3000,
     express = require("express"),
     app = express();
+
+app.set("port", process.env.port || 3000);
+app.set("view engine", "ejs");
+
 /*
 app.get("/items/:vegetable", (req, res) => {
     let veg = req.params.vegetable;
@@ -13,18 +16,14 @@ app.get("/items/:vegetable", (req, res) => {
     res.send(`this is the page for vegetable ${veg}`)
 });abc
 */
-
-
-
-app.get("/items/:vegetable", homeController.sendReqParams);
 app.use(express.urlencoded({
     extended: false
 })
 );
 //
 app.use(express.json());
-
-
+app.get("/items/:vegetable", homeController.sendReqParams);
+app.get("/name/", homeController.)
 app.post("/",
     (req, res) => {
         console.log(req.body);

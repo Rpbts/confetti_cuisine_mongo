@@ -35,9 +35,14 @@ app.get("/items/:vegetable", (req, res) => {
     res.send(`this is the page for vegetable ${veg}`)
 });
 */
-
 exports.sendReqParams = (req, res) => {
     let veg = req.params.vegetable;
     res.send(`and the veggy is: ${veg}`)
 
 };
+
+
+exports.returnsName = (req, res) => {
+    res.render("index")
+
+}
