@@ -1,31 +1,40 @@
 "use strict";
 
 const { urlencoded } = require("express");
+const homeController = require("./controllers/homeController");
 
 const port = 3000,
     express = require("express"),
     app = express();
-
+/*
 app.get("/items/:vegetable", (req, res) => {
     let veg = req.params.vegetable;
+    console.log("veggy");
     res.send(`this is the page for vegetable ${veg}`)
 });
+*/
 
 app.use(express.urlencoded({
-    extended: fallse
+    extended: false
 })
 );
-
+//
 app.use(express.json());
+
 
 app.post("/",
     (req, res) => {
         console.log(req.body);
         console.log(req.query);
-        res.send("POST has completed!");
+        res.send("POST Succesful!");
     });
 
+app.listen(port, () => {
+    console.log(`APP started on port ${port}`);
+});
 
+
+    //
 /* const
     express = require("express"),
     app = express(),

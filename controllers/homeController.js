@@ -27,3 +27,17 @@ var courses = [
 exports.showCourses = (req, res) => {
     res.render("courses", { offeredCourses: courses });
 };
+
+/*
+app.get("/items/:vegetable", (req, res) => {
+    let veg = req.params.vegetable;
+     console.log("veggy");
+    res.send(`this is the page for vegetable ${veg}`)
+});
+*/
+
+exports sendReqParams = (req, res) => {
+    let veg = req.params.vegetable;
+    res.send(`and the veggy is: ${veg}`);
+
+};

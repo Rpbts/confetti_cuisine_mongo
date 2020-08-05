@@ -17,3 +17,7 @@ abc
 
 console
 console.log(req.params);         1console.log(req.body);console.log(req.url);console.log(req.query);
+
+curl --data "first_name=Jon&last_name=Wexler" http://localhost:3000
+
+http://localhost:3000?cart=3&pagesVisited=4&utmcode=837623
