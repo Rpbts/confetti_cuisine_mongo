@@ -13,7 +13,7 @@ app.get("/items/:vegetable", (req, res) => {
     res.send(`this is the page for vegetable ${veg}`)
 });
 */
-
+app.get("/items/:vegetable", homeController.sendReqParams);
 app.use(express.urlencoded({
     extended: false
 })

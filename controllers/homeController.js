@@ -6,7 +6,7 @@ exports.showSignUp = (req, res) => {
 
 exports.postedSignUpForm = (req, res) => {
     res.render("thanks");
-}
+};
 
 var courses = [
     {
@@ -25,7 +25,7 @@ var courses = [
 ];
 
 exports.showCourses = (req, res) => {
-    res.render("courses", { offeredCourses: courses });
+    res.render("courses", { offeredCourses: courses })
 };
 
 /*
@@ -36,8 +36,8 @@ app.get("/items/:vegetable", (req, res) => {
 });
 */
 
-exports sendReqParams = (req, res) => {
+exports.sendReqParams = (req, res) => {
     let veg = req.params.vegetable;
-    res.send(`and the veggy is: ${veg}`);
+    res.send(`and the veggy is: ${veg}`)
 
 };
