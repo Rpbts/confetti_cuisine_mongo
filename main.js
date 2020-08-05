@@ -11,8 +11,11 @@ app.get("/items/:vegetable", (req, res) => {
     let veg = req.params.vegetable;
     console.log("veggy");
     res.send(`this is the page for vegetable ${veg}`)
-});
+});abc
 */
+
+
+
 app.get("/items/:vegetable", homeController.sendReqParams);
 app.use(express.urlencoded({
     extended: false
