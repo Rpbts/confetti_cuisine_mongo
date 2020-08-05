@@ -1,6 +1,3 @@
-//
-
-
 
 exports.showSignUp = (req, res) => {
     console.log("in showSignUp");
