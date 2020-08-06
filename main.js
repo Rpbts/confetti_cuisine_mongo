@@ -1,13 +1,16 @@
 "use strict";
 
 const { urlencoded } = require("express"),
+    layouts = require("express-ejs-layouts"),
     homeController = require("./controllers/homeController"),
     port = 3000,
     express = require("express"),
     app = express();
 
+
 app.set("port", process.env.port || 3000);
 app.set("view engine", "ejs");
+app.use(layouts);
 
 /*
 app.get("/items/:vegetable", (req, res) => {
@@ -23,7 +26,8 @@ app.use(express.urlencoded({
 //
 app.use(express.json());
 app.get("/items/:vegetable", homeController.sendReqParams);
-app.get("/name/", homeController.)
+app.get("/name/:myName", homeController.respondWithName);
+
 app.post("/",
     (req, res) => {
         console.log(req.body);

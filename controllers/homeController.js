@@ -31,18 +31,17 @@ exports.showCourses = (req, res) => {
 /*
 app.get("/items/:vegetable", (req, res) => {
     let veg = req.params.vegetable;
-     console.log("veggy");
+     console.log("veggy"); xxxx 
     res.send(`this is the page for vegetable ${veg}`)
 });
 */
 exports.sendReqParams = (req, res) => {
     let veg = req.params.vegetable;
-    res.send(`and the veggy is: ${veg}`)
-
+    res.send(`and the veggy is: ${veg}`);
 };
 
 
-exports.returnsName = (req, res) => {
-    res.render("index")
-
-}
+exports.respondWithName = (req, res) => {
+    let paramsName = req.params.myName;
+    res.render("index", { name: paramsName });
+};
