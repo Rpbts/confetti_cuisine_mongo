@@ -23,11 +23,17 @@ app.use(express.urlencoded({
     extended: false
 })
 );
-//
-app.use(express.json());
-app.get("/items/:vegetable", homeController.sendReqParams);
-app.get("/name/:myName", homeController.respondWithName);
 
+app.get("/", (req,res) => {
+    res.send("Welcome to CONFETTI CUISINE!");
+});
+app.use(express.json());
+express.static("public");
+// app.get("/items/:vegetable", homeController.sendReqParams);
+app.get("/name/:myName", homeController.respondWithName);
+app.get("/courses/", homeController.showCourses)
+app.get("/contact/", homeController.showSignUp);
+app.post("/contact/", homeController.postedSignupForm);
 app.post("/",
     (req, res) => {
         console.log(req.body);

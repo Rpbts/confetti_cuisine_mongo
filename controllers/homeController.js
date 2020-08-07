@@ -4,7 +4,7 @@ exports.showSignUp = (req, res) => {
     res.render("contact");
 };
 
-exports.postedSignUpForm = (req, res) => {
+exports.postedSignupForm = (req, res) => {
     res.render("thanks");
 };
 //
