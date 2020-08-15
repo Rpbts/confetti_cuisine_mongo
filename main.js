@@ -13,6 +13,7 @@ app.set("view engine", "ejs");
 app.use(layouts);
 
 /*
+
 app.get("/items/:vegetable", (req, res) => {
     let veg = req.params.vegetable;
     console.log("veggy");
